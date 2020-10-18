@@ -10,7 +10,7 @@ A third possibility is to run the Java applet in the original [web site](http://
 
 For completeness, the old Java code is in folder *original*, including a stand-alone Java app.  All the code in this repository is in the public domain.
 
-The [rsde](https://github.com/ogarciav/resde) *R* package includes the unifying model as function *unitran()*, and implements some estimation methods.
+The [resde](https://github.com/ogarciav/resde) *R* package includes the unifying model as function *unitran()*, and implements some estimation methods.
 
 #### References
 

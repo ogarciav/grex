@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+    This is an R Shiny implementation of the Java applet described in 
+    Garc&iacute;a, O. (2008) "Visualization of a general family of growth functions and probability distributions &#8212; The Growth-curve Explorer". <em>Environmental Modelling & Software 23</em>(12), 1474-1475 (<a href="https://doi.org/10.1016/j.envsoft.2008.04.005">DOI</a>).    
+    Java applets are not longer supported in modern browsers. Other alternatives are to use a translation into JavaScript with <a href="https://leaningtech.com/pages/cheerpj.html">CheerpJ</a> available at <a href="https://grex.github.io">GitHub</a>, or running the original <a href="http://forestgrowth.unbc.ca/grex/index.html">applet</a> with the CheerpJ Chrome browser <a href="https://chrome.google.com/webstore/detail/cheerpj-applet-runner/bbmolahhldcbngedljfadjlognfaaein">plugin</a>.  
+
+    <h3>Model</h3>
+    
+    A family of growth curves with two shape parameters (<em>a</em> and <em>b</em>),
+    that includes most of the known univariate growth models as special cases.
+     It also describes probability distributions with an explicit form for
+    the cumulative, useful in computer simulation, including the Burr Type
+    III and Type XII, among others.<br>
+    <br>
+    The growth curve equation is  <em>y</em> = <em>B</em><sup>-1</sup>[<em>B</em><sup>-1</sup>(<em>t,
+      b</em>), <em>a</em>],  where <em>B</em> is the negative Box-Cox
+    transformation  <em>B</em>(<em>x, c</em>) = (1 - <em>x</em><sup><em>c</em></sup>)
+    / <em>c</em>  if  <em>c</em> &#8800; 0,  <em>B</em>(<em>x,</em>
+    0) = -ln <em>x</em>.  Or <em> B</em><sup>-1</sup>(<em>x, c</em>)
+    = (1 - <em>c x</em>)<sup>1/<em>c</em></sup>  if  <em>c</em> &#8800; 0,
+     <em>B</em><sup>-1</sup>(<em>x,</em> 0) = e<sup>-<em>x</em></sup>.
+     In general, <em>t</em> and <em>y</em> are subject to affine
+    transformations, with additional location and scale parameters.
+     Negative scale parameters reverse the  <em>t</em>- and <em>y</em>-axis,
+    and are specified here by ticking the <em>Reverse</em> checkbox (both axes,
+    reversing only one would give decreasing curves).  For details see Garc&iacute;a,
+      O. (2005) "Unifying sigmoid univariate growth equations", <em>Forest Biometry,
+      Modelling and Information Sciences 1</em>, 63-68 (<a href="https://www.researchgate.net/publication/228432882">link</a>).<br>
+    <br>
+    The graphs at the top show the <em>y</em>-over-<em>t</em> growth curve (or
+    distribution function) and the d<em>y</em>/d<em>t</em>-over-<em>y</em>
+    growth rate curve, corresponding to the shape parameters <em>a</em>
+    and <em>b</em> chosen with the mouse in the parameters diagram below.
+     The contours in the diagram (Figure 1 from Garcia 2005) indicate the
+    height of the inflection point, and common names of some growth-curve
+    instances are indicated (items in parenthesis correspond to reversed-axis
+    versions).  Sigmoids have an inflection point and an upper asymptote.
+     Selecting the <em>Auto</em> checkbox chooses the appropriate axes
+    orientation for a sigmoid, when possible.  Ticking the <em>Density</em>
+    checkbox displays the probability density function.
+    
+    <h3>What's in a name?</h3>
+    
+    Attaching names to equations is
+    always risky.  Very often assumptions about priority turn out to be
+    wrong.  Naming the case  <em>a</em> = 1/3, <em>b</em> = 0
+     after von Bertalanffy, although common, seems particularly unfair,
+    given that he used a general <em>a</em> &#8805; 0  in the
+    1930's.  These values contain the most useful parameter range of the
+    "Richards" function, as acknowledged in Richards' 1959 publication that
+    popularized it for modelling plant growth. Later, the general Richards model was derived by Nelder as a <em>generalized logistic</em>. In the forestry literature
+    the function is often referred to as "Chapman-Richards", although Chapman's
+    1961 application of it to fish growth follows a well-known 1957
+    fisheries monograph by Beverton and Holt.  In fisheries, the von Bertalanffy model often refers to the monomolecular <em>a</em> = 1, <em>b</em> = 0 (for growth in length, instead of weight). This is also called Mitscherlich, although that author used a more general model where 1/<em>a</em> is an integer.  

@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+<meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org"><title>More on the growth equations</title></head>
+<body>
+<h1> More on the growth equations </h1>
+<p> The growth explorer applet and its Java <a href="grex.java">source</a> are in the public domain. </p>
+<p> The following table shows simplified growth curve formulas
+and common names for the various special cases.&nbsp; Where
+possible, axes have been scaled and translated to have an origin at <i>&nbsp;t</i>=0,
+<i>y</i>=0, and an asymptote at&nbsp; <i>y</i>=1.&nbsp;
+The exceptions are the cases&nbsp; <i>a</i> &#8804; 0, <i>b</i>=0,
+where <i>t</i> ranges between minus and plus infinity, and
+the case &nbsp;<i>a</i> &gt; 0, <i>b</i>
+&gt; 0, where the range of <i>&nbsp;t</i>
+&nbsp;is finite, here scaled to [0,&nbsp;1].&nbsp; To simplify,
+expressions are given in terms of positive shape parameters &nbsp;<i>p</i>
+= |1/<i>a</i>|&nbsp; and <i>&nbsp;q</i>
+= |1/<i>b</i>|, and &nbsp;<i>t&nbsp;</i>
+is re-scaled for the simplest form.&nbsp; In practice, scale and possibly
+location parameters would be included through substitutions <i>t</i>&nbsp;&#8594;&nbsp;<i>k
+t</i> + <i>m</i>,&nbsp; <i>t</i> &#8594; <i>k</i>(<i>t</i>
+- <i>m</i>), or &nbsp;<i>t</i> &#8594; (<i>t</i>
+- <i>m</i>) / <i>k</i>.&nbsp; Similarly
+for &nbsp;<i>y</i>, except, of course, when modelling
+probability distributions. </p>
+<center>
+<table style="text-align: left; height: 112px; width: 499px; margin-left: 0px;" border="1" cellpadding="6" cellspacing="0">
+<tbody>
+<tr>
+<td style="text-align: center; vertical-align: middle; width: 53px;">
+<i>b</i> &gt; 0,<br>
+<i>b</i> &#8804; 1 </td>
+<td style="text-align: center; vertical-align: middle; width: 129px;">
+1 -&nbsp;1 / (1+<i>t</i><sup><i>q</i></sup>)<sup><i>p</i></sup>
+</td>
+<td style="text-align: center; vertical-align: middle;">
+1 - exp(- <i>t</i><sup><i>q</i></sup>)<br>
+(Weibull) </td>
+<td style="text-align: center; vertical-align: middle;">
+[1 - (1-<i>t</i>)<sup><i>q</i></sup>]<sup><i>p</i>
+</sup>and<br>
+<sup>&nbsp;</sup>1 - (1-<i>t</i><sup><i>q</i></sup>)<sup><i>p</i></sup>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle; width: 53px;">
+<i>b</i>=0 </td>
+<td style="text-align: center; vertical-align: middle; width: 129px;">
+1 / (1+e<sup>-<i>t</i></sup>)<sup><i>p</i></sup><br>
+(Richards), and<br>
+1 - 1 / (1+e<sup><i>t</i></sup>)<sup>p</sup>
+</td>
+<td style="text-align: center; vertical-align: middle;">
+exp(-e<sup>-<i>t</i></sup>)<br>
+(Gompertz), and<br>
+1 - exp(-e<sup><i>t</i></sup>) </td>
+<td style="text-align: center; vertical-align: middle; white-space: nowrap;">
+(1 - e<sup>-<i>t</i></sup>)<sup><i>p</i></sup><br>
+(Bertalanffy) </td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle; width: 53px;">
+<i>b</i> &lt; 0 </td>
+<td style="text-align: center; vertical-align: middle; width: 129px;">
+[<i>t</i><sup><i>q</i></sup> / (1+<i>t</i><sup><i>q</i></sup>
+)]<sup><i>p</i></sup><br>
+(Levacovic I) </td>
+<td style="text-align: center; vertical-align: middle;">
+exp(-1/<i>t</i><sup><i>q</i></sup> )<br>
+(Korf)</td>
+<td style="text-align: center; vertical-align: middle;">
+[1 -&nbsp;1 / (<i>t</i>+1)<sup><i>q</i></sup>]<sup><i>p</i></sup>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle; width: 53px;"></td>
+<td style="text-align: center; vertical-align: middle; width: 129px;">
+<i>a</i> &lt; 0 </td>
+<td style="text-align: center; vertical-align: middle;">
+<i>a</i>=0 </td>
+<td style="text-align: center; vertical-align: middle;">
+<i>a</i> &gt; 0, <i>a</i>&nbsp;&#8804;
+1 </td>
+</tr>
+</tbody>
+</table>
+</center>
+<br>
+<p> I suggest reserving the name <em>Richards</em>
+for Richards' extension to negative <i>a</i>, and calling <em>Bertalanffy</em>
+or <em>Bertalanffy-Richards</em> the case <i>&nbsp;a</i>
+&gt; 0&nbsp; originally proposed by von Bertalanffy. </p>
+<p> As noted in Garcia (2005), there is some confusion in the
+literature about the differential forms of&nbsp;growth models.&nbsp;
+Many authors give "the" growth equation &nbsp;d<i>y</i>/d<i>t</i>
+= <i>f</i>(<i>t</i>, <i>y</i>)&nbsp;
+corresponding to each growth curve.&nbsp; In fact, there are
+infinitely many differential equations of this type that generate
+exactly the same curve.&nbsp; Of these, the most interesting is the
+autonomous or time-invariant differential equation without &nbsp;<i>t</i>&nbsp;
+on the right-hand-side, graphed at the top-left in the applet. Or, for
+distributions, the probability density function that depends only on
+&nbsp;<i>t</i>.&nbsp; For our model, the general
+form of the first one, in terms of the Box-Cox transformation, is
+&nbsp;d<i>y</i>/d<i>t</i> = <i>y</i><sup>1-<i>a</i></sup>
+<i>B</i>(<i>y</i>, <i>a</i>)<sup>1-<i>b</i></sup>.&nbsp;
+Expanding this into a table like the one above, and working out the
+densities, are left as an exercise to the reader &#9786;</p>
+<p> Some common names for the probability distributions, and
+variable ranges:</p>
+<center>
+<table style="text-align: left; height: 112px; margin-left: 0px; width: 500px;" border="1" cellpadding="6" cellspacing="0">
+<tbody>
+<tr>
+<td style="text-align: center; vertical-align: middle; white-space: nowrap; width: 53px;">
+<i>b</i> &gt; 0,<br>
+<i>b</i> &#8804; 1 </td>
+<td style="text-align: center; vertical-align: middle; width: 175px;">Burr
+Type XII<br>
+0&nbsp;&#8804; t &lt; &#8734; </td>
+<td style="text-align: center; vertical-align: middle;">Weibull<br>
+0&nbsp;&#8804; t &lt; &#8734;</td>
+<td style="text-align: center; vertical-align: middle; width: 80px;">Proctor<br>
+0&nbsp;&#8804; t&nbsp;&#8804; 1
+</td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle; width: 53px;">
+<i>b</i>=0 </td>
+<td style="text-align: center; vertical-align: middle; width: 175px;">Burr
+Type II or VII, Generalized Logistic<br>
+-&#8734; &lt; t &lt; &#8734;</td>
+<td style="text-align: center; vertical-align: middle;">Extreme
+Value, Gumbel<br>
+-&#8734; &lt; t &lt; &#8734;</td>
+<td style="text-align: center; vertical-align: middle; width: 80px;">?<br>
+0&nbsp;&#8804; t &lt; &#8734; </td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle; width: 53px;">
+<i>b</i> &lt; 0 </td>
+<td style="text-align: center; vertical-align: middle; width: 175px;">Burr
+Type III<br>
+0&nbsp;&#8804; t &lt; &#8734; </td>
+<td style="text-align: center; vertical-align: middle;">Extreme
+Value Type 2, Fréchet<br>
+0&nbsp;&#8804; t &lt; &#8734; </td>
+<td style="text-align: center; vertical-align: middle; width: 80px;">?<br>
+0&nbsp;&#8804; t &lt; &#8734;
+</td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle; width: 53px;"></td>
+<td style="text-align: center; vertical-align: middle; width: 175px;">
+<i>a</i> &lt; 0 </td>
+<td style="text-align: center; vertical-align: middle;">
+<i>a</i>=0 </td>
+<td style="text-align: center; vertical-align: middle; width: 80px;">
+<i>a</i> &gt; 0, <i>a</i>&nbsp;&#8804;
+1 </td>
+</tr>
+</tbody>
+</table>
+</center>
+<br>
+<br>&nbsp;García, O. &nbsp;(2008). "Visualization
+of a general family of growth functions and probability distributions &#8212;
+The Growth-curve Explorer".&nbsp;<span style="font-style: italic;">Environmental
+Modelling and Software 23</span> (12), 1474-1475: &nbsp;<a href="http://dx.doi.org/10.1016/j.envsoft.2008.04.005">doi:10.1016/j.envsoft.2008.04.005</a>.<br>&nbsp;García, O. &nbsp;(2005). <em>"</em>Unifying sigmoid
+univariate growth
+equations"<em>.</em> <strong>&nbsp;</strong><span style="font-style: italic;">Forest Biometry,
+Modelling and
+Information Sciences 1</span>, 63-68.&nbsp;&nbsp;<a href="http://cms1.gre.ac.uk/conferences/iufro/fbmis/A/5_1_GarciaO_1.pdf">Text (FBMIS)</a>
+<hr style="width: 100%; height: 2px;">
+<p> <a href="http://forestgrowth.unbc.ca/grex">Back</a>
+to the applet page... </p>
+</body></html>

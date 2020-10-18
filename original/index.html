@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=us-ascii" http-equiv="content-type">
+    <meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+    <title>GREX - Oscar Garcia, UNBC</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Growth-curve Explorer</h1>
+    <applet code="grex.class" alt="Your browser understands the &lt;APPLET&gt; tag but isn't running the applet, for some reason."
+      align="left" height="640" hspace="20" width="610"> <param name="NPOINTS"
+        value="default"> <param name="CUTOFF" value="default"> <param name="MAPPING"
+        value="default"> CAN'T RUN THE APPLET, NO JAVA SUPPORT.<br>
+    </applet> <strong>Note</strong>: If you cannot run the applet, try
+    downloading this <a href="grexapp.zip">stand-alone app</a>. Unzip in a
+    folder, and run in there as "java grexapp" (needs an installed Java Runtime
+    Environment, <a href="http://java.com">JRE</a>). Here is the <a href="grexapp.java">source</a>.<br>
+    <br>
+    Click or drag on the parameters area.<br>
+    <br>
+    A family of growth curves with two shape parameters (<em>a</em> and <em>b</em>),
+    that includes most of the known univariate growth models as special cases.
+    &nbsp;It also describes probability distributions with an explicit form for
+    the cumulative,&nbsp;useful in computer simulation, including the Burr Type
+    III and Type XII, among others.<br>
+    <br>
+    The growth curve equation is &nbsp;<em>y</em> = <em>B</em><sup>-1</sup>[<em>B</em><sup>-1</sup>(<em>t,
+      b</em>), <em>a</em>],&nbsp; where <em>B</em> is the negative Box-Cox
+    transformation &nbsp;<em>B</em>(<em>x, c</em>) = (1 - <em>x</em><sup><em>c</em></sup>)
+    / <em>c</em> &nbsp;if&nbsp; <em>c</em> &#8800; 0, &nbsp;<em>B</em>(<em>x,</em>
+    0) = -ln&nbsp;<em>x</em>. &nbsp;Or <em>&nbsp;B</em><sup>-1</sup>(<em>x, c</em>)
+    = (1 - <em>c x</em>)<sup>1/<em>c</em></sup> &nbsp;if &nbsp;<em>c</em> &#8800; 0,
+    &nbsp;<em>B</em><sup>-1</sup>(<em>x,</em> 0) = e<sup>-<em>x</em></sup>.
+    &nbsp;In general,&nbsp;<em>t</em> and&nbsp;<em>y</em> are subject to affine
+    transformations, with additional location and scale parameters.
+    &nbsp;Negative scale parameters reverse the&nbsp;&nbsp;<em>t</em>- and&nbsp;<em>y</em>-axis,
+    and are specified here by ticking the <em>Reverse</em> checkbox (both axes,
+    reversing only one would give decreasing curves). &nbsp;For details see <em>Garcia,
+      O. "Unifying sigmoid univariate growth equations", Forest Biometry,
+      Modelling and Information Sciences</em> 1, <em>63-68, 2005</em> (<a href="http://www.fbmis.info">www.fbmis.info</a>).<br>
+    <br>
+    The graphs at the top show the <em>y</em>-over-<em>t</em> growth curve (or
+    distribution function) and the d<em>y</em>/d<em>t</em>-over-<em>y</em>
+    growth rate curve, corresponding to the shape parameters <em>a</em>
+    and&nbsp;<em>b</em> chosen with the mouse in the parameters diagram below.
+    &nbsp;The contours in the diagram (Figure 1 from Garcia 2005) indicate the
+    height of the inflection point, and common names of some growth-curve
+    instances are indicated (items in parenthesis correspond to reversed-axis
+    versions). &nbsp;Sigmoids have an inflection point and an upper asymptote.
+    &nbsp;Selecting the <em>Auto</em> checkbox chooses the appropriate axes
+    orientation for a sigmoid, when possible. &nbsp;Ticking the <em>Density</em>
+    checkbox displays the probability density function.<br>
+    <br>
+    <strong>What's in a name?</strong>&nbsp; Attaching names to equations is
+    always risky.&nbsp; Very often assumptions about priority turn out to be
+    wrong.&nbsp; Naming the case&nbsp; <em>a</em> = 1/3, <em>b</em> = 0
+    &nbsp;after von Bertalanffy, although common, seems particularly unfair,
+    given that he used a general <em>&nbsp;a</em> &#8805; 0 &nbsp;in the
+    1930's.&nbsp; These values contain the most useful parameter range of the
+    "Richards" function, as acknowledged in Richards' 1959 publication that
+    popularized it for modelling plant growth.&nbsp; In the forestry literature
+    the function is often referred to as "Chapman-Richards", although Chapman's
+    1961 application of it to&nbsp;growth in fishes follows a well-known 1957
+    fisheries monograph by Beverton and Holt.&nbsp; Recently, the Richards
+    function has been&nbsp;attributed to Mitscherlich, who only used instances
+    where &nbsp;1/<em>a&nbsp;</em> is an integer.<br>
+    <br>
+    <a href="grexmore.html">More...</a>
+    <hr style="width: 100%; height: 2px;"> <br>
+    Back to: <a target="_parent" href="http://forestgrowth.unbc.ca/">G&amp;Y</a>
+    Chair home page...&nbsp; <a href="http://web.unbc.ca/%7Egarcia/">Personal</a>
+    home page&#8230; &nbsp;
+  </body>
+</html>

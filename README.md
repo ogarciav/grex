@@ -2,7 +2,7 @@
 
 The *Growth-curve Explorer* is a visualization of a general equation that unifies many growth curve models and probability distributions. The original version is a Java applet described by García (2008), and available at http://forestgrowth.unbc.ca/grex/. Unfortunately, modern web browsers have dropped support for Java applets. Here are two alternatives:
 
-1. A translation of the applet into JavaScript by [CheerpJ](https://leaningtech.com/pages/cheerpj.htm). The code is in folder *docs* in this repository, and the app can be accessed at https://ogarciav.github.io/grex/. The original documentation has been slightly edited.
+1. A translation of the applet into JavaScript by [CheerpJ](https://leaningtech.com/pages/cheerpj.htm). The code is in folder *docs* in this repository, and the app can be accessed at https://ogarciav.github.io/grex/ (be patient, loading can take a while). The original documentation has been slightly edited.
 
 2. A re-implementation as an *R Shiny* app, in folder *shiny*. The app can be run on https://oscargarcia.shinyapps.io/grex/.
 

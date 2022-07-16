@@ -1,7 +1,7 @@
 # grex  ---  Growth-curve Explorer
 
 Up to shifts and scaling, many growth curve and probability distribution functions having a closed form are special cases of
-$$ y = \varphi[\varphi(t, b), a] \;, $$
+$y = \varphi[\varphi(t, b), a]$,
 where $\varphi(x, \lambda) = (1 + \lambda x)^{1/\lambda}$ if $\lambda \ne 0$,
 $\varphi(x, 0) = \exp(-x)$, and $a \le 1$ and $b \le 1$ are shape parameters. 
 

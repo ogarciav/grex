@@ -4,7 +4,7 @@
     <meta content="text/html; charset=us-ascii" http-equiv="content-type">
     <meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
     <title>GREX - Oscar Garcia, UNBC</title>
-    <script src="https://cjrtnc.leaningtech.com/2.1/loader.js"></script>
+    <script src="https://cjrtnc.leaningtech.com/2.3/loader.js"></script>
   </head>
   <body>
     <h1 style="text-align: center;">Growth-curve Explorer</h1>
@@ -21,7 +21,7 @@
  
     This is a translation into JavaScript by <a href="https://leaningtech.com/pages/cheerpj.html">CheerpJ</a> of the Java applet described in 
     Garc&iacute;a, O. (2008) "Visualization of a general family of growth functions and probability distributions &#8212; The Growth-curve Explorer". <em>Environmental Modelling & Software 23</em>(12), 1474-1475 (<a href="https://doi.org/10.1016/j.envsoft.2008.04.005">DOI</a>).    
-    Java applets are not longer natively supported in modern browsers, but another alternative is to run the original <a href="http://forestgrowth.unbc.ca/grex/index.html">applet</a> with the CheerpJ Chrome browser <a href="https://chrome.google.com/webstore/detail/cheerpj-applet-runner/bbmolahhldcbngedljfadjlognfaaein">plugin</a>. There is also an R Shiny implementation <a href="https://oscargarcia.shinyapps.io/grex/">here</a>.
+    Java applets are not longer natively supported in modern browsers, but another alternative is to run the original <a href="https://web.unbc.ca/~garcia/growth&yield/grex/index.html">applet</a> with the CheerpJ Chrome browser <a href="https://chrome.google.com/webstore/detail/cheerpj-applet-runner/bbmolahhldcbngedljfadjlognfaaein">plugin</a>. There is also an R Shiny implementation <a href="https://oscargarcia.shinyapps.io/grex/">here</a>.
 
     <h3>Model</h3>
     
@@ -42,9 +42,81 @@
     transformations, with additional location and scale parameters.
      Negative scale parameters reverse the  <em>t</em>- and <em>y</em>-axis,
     and are specified here by ticking the <em>Reverse</em> checkbox (both axes,
+    reversing only one would give decreasing curves).  For details see Garc&iacute;a, - <em>x</em><sup><em>c</em></sup>)
+
+37
+
+    / <em>c</em>  if  <em>c</em> &#8800; 0,  <em>B</em>(<em>x,</em>
+
+38
+
+    0) = -ln <em>x</em>.  Or <em> B</em><sup>-1</sup>(<em>x, c</em>)
+
+39
+
+    = (1 - <em>c x</em>)<sup>1/<em>c</em></sup>  if  <em>c</em> &#8800; 0,
+
+40
+
+     <em>B</em><sup>-1</sup>(<em>x,</em> 0) = e<sup>-<em>x</em></sup>.
+
+41
+
+     In general, <em>t</em> and <em>y</em> are subject to affine
+
+42
+
+    transformations, with additional location and scale parameters. - <em>x</em><sup><em>c</em></sup>)
+
+37
+
+    / <em>c</em>  if  <em>c</em> &#8800; 0,  <em>B</em>(<em>x,</em>
+
+38
+
+    0) = -ln <em>x</em>.  Or <em> B</em><sup>-1</sup>(<em>x, c</em>)
+
+39
+
+    = (1 - <em>c x</em>)<sup>1/<em>c</em></sup>  if  <em>c</em> &#8800; 0,
+
+40
+
+     <em>B</em><sup>-1</sup>(<em>x,</em> 0) = e<sup>-<em>x</em></sup>.
+
+41
+
+     In general, <em>t</em> and <em>y</em> are subject to affine
+
+42
+
+    transformations, with additional location and scale parameters.
+
+43
+
+     Negative scale parameters reverse the  <em>t</em>- and <em>y</em>-axis,
+
+44
+
+    and are specified here by ticking the <em>Reverse</em> checkbox (both axes,
+
+45
+
+    reversing only one would give decreasing curves).  For details see Garc&iacute;a,
+
+43
+
+     Negative scale parameters reverse the  <em>t</em>- and <em>y</em>-axis,
+
+44
+
+    and are specified here by ticking the <em>Reverse</em> checkbox (both axes,
+
+45
+
     reversing only one would give decreasing curves).  For details see Garc&iacute;a,
       O. (2005) "Unifying sigmoid univariate growth equations", <em>Forest Biometry,
-      Modelling and Information Sciences 1</em>, 63-68 (<a href="https://www.researchgate.net/publication/228432882">link</a>).<br>
+      Modelling and Information Sciences 1</em>, 63-68 (<a href="https://www.researchgate.net/publication/228432882>link</a>).<br>
     <br>
     The graphs at the top show the <em>y</em>-over-<em>t</em> growth curve (or
     distribution function) and the d<em>y</em>/d<em>t</em>-over-<em>y</em>
